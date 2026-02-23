@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krew Analytics — Dashboard Visuales en Tiempo Real para Meta Ads</title>
+    <meta name="description"
+        content="Conecta tu Google Sheet y en 30 segundos tendrás un dashboard visual en tiempo real con alertas inteligentes. La herramienta #1 para media buyers." />
+    <meta name="theme-color" content="#0B0F19" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Krew Analytics — Dashboard Visuales en Tiempo Real" />
+    <meta property="og:description"
+        content="Transforma tu Google Sheet de Meta Ads en un dashboard premium. Setup en 30 segundos." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://krew.com.mx" />
+</head>
+
+<body>
+
+    <!-- ═══════════════ NAVBAR ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <span class="nav-logo-icon">⚡</span>
+                <span class="nav-logo-text">Krew<span class="gold">Analytics</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#features">Características</a>
+                <a href="#comparison">Comparativa</a>
+                <a href="#how">Cómo Funciona</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <a href="https://www.skool.com/krew-ai/about" class="btn btn-primary btn-sm" target="_blank">
+                Únete a Krew →
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-content reveal">
+            <span class="hero-badge">⚡ Dashboard #1 para Media Buyers</span>
+            <h1 class="hero-title">
+                Deja de pelear con Looker Studio.<br />
+                Tus métricas de Meta Ads, en un <span class="gold">dashboard que sí funciona.</span>
+            </h1>
+            <p class="hero-sub">
+                Conecta tu Google Sheet y en 30 segundos tendrás un dashboard visual, en tiempo real,
+                con alertas inteligentes — sin pagar $300/mes por herramientas que no necesitas.
+            </p>
+            <div class="hero-ctas">
+                <a href="https://www.skool.com/krew-ai/about" class="btn btn-primary" target="_blank">Únete a la
+                    comunidad →</a>
+                <a href="#demo" class="btn btn-ghost">Ver demo en vivo ↗</a>
+            </div>
+        </div>
+        <div class="hero-image reveal reveal-delay-1">
+            <div class="hero-glow"></div>
+            <img src="/img/dashboard-hero.png" alt="Krew Analytics Dashboard" loading="eager" />
+        </div>
+    </section>
+
+    <!-- ═══════════════ MARQUEE ═══════════════ -->
+    <div class="marquee-wrap">
+        <div class="marquee-track">
+            <span>Métricas en tiempo real</span><span>·</span>
+            <span>Alertas inteligentes</span><span>·</span>
+            <span>Dark mode premium</span><span>·</span>
+            <span>Compartir con un click</span><span>·</span>
+            <span>Multi-sheet</span><span>·</span>
+            <span>Embudo de conversión</span><span>·</span>
+            <span>Ranking de anuncios</span><span>·</span>
+            <span>Métricas personalizables</span><span>·</span>
+            <span>Métricas en tiempo real</span><span>·</span>
+            <span>Alertas inteligentes</span><span>·</span>
+            <span>Dark mode premium</span><span>·</span>
+            <span>Compartir con un click</span><span>·</span>
+            <span>Multi-sheet</span><span>·</span>
+            <span>Embudo de conversión</span><span>·</span>
+            <span>Ranking de anuncios</span><span>·</span>
+            <span>Métricas personalizables</span><span>·</span>
+        </div>
+    </div>
+
+    <!-- ═══════════════ PROBLEM ═══════════════ -->
+    <section class="section" id="problem">
+        <div class="container">
+            <span class="section-tag reveal">El problema</span>
+            <h2 class="section-title reveal">¿Te suena familiar?</h2>
+
+            <div class="pain-grid">
+                <div class="pain-card reveal">
+                    <div class="pain-icon">😩</div>
+                    <h3>Looker Studio te consume horas.</h3>
+                    <p>Configurar un reporte decente lleva días. Moverle un filtro rompe todo. Y cuando por fin
+                        funciona… carga lento o se desincroniza.</p>
+                </div>
+                <div class="pain-card reveal reveal-delay-1">
+                    <div class="pain-icon">💸</div>
+                    <h3>Las herramientas pro cuestan una fortuna.</h3>
+                    <p>Hyros, Triple Whale, Northbeam… $300 a $1,000/mes. Si manejas campañas de $5K-$50K, el ROI
+                        simplemente no da.</p>
+                </div>
+                <div class="pain-card reveal reveal-delay-2">
+                    <div class="pain-icon">📋</div>
+                    <h3>Tu cliente pide un reporte y terminas en Excel.</h3>
+                    <p>Copias datos de Meta al Sheet, haces tablas, coloreas celdas, mandas un PDF que nadie lee. Cada
+                        semana.</p>
+                </div>
+                <div class="pain-card reveal reveal-delay-3">
+                    <div class="pain-icon">🔥</div>
+                    <h3>No sabes qué anuncio está quemando presupuesto.</h3>
+                    <p>Te enteras a las 11pm que un ad con CPR de $200 estuvo corriendo todo el día. Eso no puede seguir
+                        pasando.</p>
+                </div>
+            </div>
+
+            <p class="transition-text reveal">
+                Creamos Krew Analytics porque vivimos exactamente esto.<br />
+                Y decidimos que había una <span class="gold">forma mejor.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SOLUTION ═══════════════ -->
+    <section class="section section-alt" id="solution">
+        <div class="container">
+            <span class="section-tag reveal">La solución</span>
+            <h2 class="section-title reveal">Un dashboard premium que cuesta menos que tu café mensual.</h2>
+            <p class="section-sub reveal">Krew Analytics transforma tu Google Sheet de Meta Ads en un centro de control
+                visual, en tiempo real, con la estética de una herramienta de $500/mes.</p>
+
+            <div class="value-grid">
+                <div class="value-card reveal">
+                    <div class="value-icon">📊</div>
+                    <h3>Conecta en 30 segundos</h3>
+                    <p>Pega el link de tu Google Sheet. Sin APIs, sin integraciones complicadas, sin código. Si tienes
+                        un Sheet con tus datos de Meta, ya estás listo.</p>
+                </div>
+                <div class="value-card reveal reveal-delay-1">
+                    <div class="value-icon">⚡</div>
+                    <h3>Datos en tiempo real</h3>
+                    <p>Tu dashboard se actualiza automáticamente. Gasto, resultados, CPR, CTR, conversiones. Todo
+                        animado y hermoso.</p>
+                </div>
+                <div class="value-card reveal reveal-delay-2">
+                    <div class="value-icon">🔗</div>
+                    <h3>Comparte con un click</h3>
+                    <p>Genera un link único para tu cliente. Ve exactamente lo que tú ves, sin crear cuenta. Profesional
+                        y sin fricciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FEATURES ═══════════════ -->
+    <section class="section" id="features">
+        <div class="container">
+            <span class="section-tag reveal">Características</span>
+            <h2 class="section-title reveal">Todo lo que necesitas. Nada que no.</h2>
+
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-header">
+                        <span class="feature-icon">📈</span>
+                        <h3>KPIs en Tiempo Real</h3>
+                    </div>
+                    <ul>
+                        <li>Gasto, resultados, CPR, CTR actualizados automáticamente</li>
+                        <li>Sparklines con tendencias al instante</li>
+                        <li>Contadores animados en vivo</li>
+                        <li>Configura tus propias métricas</li>
+                    </ul>
+                </div>
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-header">
+                        <span class="feature-icon">🏆</span>
+                        <h3>Mejores Anuncios</h3>
+                    </div>
+                    <ul>
+                        <li>Ranking automático por rendimiento</li>
+                        <li>Badge "#1 MEJOR CPR" para tu ad estrella</li>
+                        <li>Scatter plot inversión vs. resultados</li>
+                        <li>Identifica ganadores en segundos</li>
+                    </ul>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-header">
+                        <span class="feature-icon">🔄</span>
+                        <h3>Embudo de Conversión</h3>
+                    </div>
+                    <ul>
+                        <li>Impresiones → Clicks → Visitas → Resultados</li>
+                        <li>Tasas de conversión entre cada paso</li>
+                        <li>Identifica dónde se pierde tu tráfico</li>
+                        <li>Visualización de barras progresivas</li>
+                    </ul>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-header">
+                        <span class="feature-icon">🚨</span>
+                        <h3>Monitoreo Inteligente</h3>
+                    </div>
+                    <ul>
+                        <li>Alertas cuando un ad supera 2X tu CPR objetivo</li>
+                        <li>Proyecciones del día basadas en ritmo actual</li>
+                        <li>Recomendaciones: "Escalar" o "Pausar"</li>
+                        <li>Barra de salud con semáforo visual</li>
+                    </ul>
+                </div>
+                <div class="feature-card reveal reveal-delay-1">
+                    <div class="feature-header">
+                        <span class="feature-icon">🔗</span>
+                        <h3>Links Compartidos</h3>
+                    </div>
+                    <ul>
+                        <li>Links únicos por cliente</li>
+                        <li>El cliente ve su nombre de reporte</li>
+                        <li>Read-only: no modifica nada</li>
+                        <li>Desactiva el link cuando quieras</li>
+                    </ul>
+                </div>
+                <div class="feature-card reveal reveal-delay-2">
+                    <div class="feature-header">
+                        <span class="feature-icon">📑</span>
+                        <h3>Multi-Sheet</h3>
+                    </div>
+                    <ul>
+                        <li>Conecta múltiples Google Sheets</li>
+                        <li>Un sheet por cliente o proyecto</li>
+                        <li>Cambia entre ellos al instante</li>
+                        <li>Cada uno con su propia configuración</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Visual Features Gallery -->
+            <div class="visual-gallery">
+                <div class="gallery-card reveal">
+                    <div class="gallery-img-wrap">
+                        <img src="/img/feat-kpis.png" alt="KPIs en Tiempo Real" loading="lazy" />
+                        <div class="img-blur-overlay"></div>
+                    </div>
+                    <h4>KPIs en <span class="gold">Tiempo Real</span></h4>
+                    <p>Gasto, resultados, CPR y CTR actualizados automáticamente con sparklines animadas.</p>
+                </div>
+                <div class="gallery-card reveal reveal-delay-1">
+                    <div class="gallery-img-wrap">
+                        <img src="/img/feat-ads.png" alt="Análisis de Anuncios" loading="lazy" />
+                        <div class="img-blur-overlay"></div>
+                    </div>
+                    <h4>Análisis de <span class="gold">Anuncios</span></h4>
+                    <p>Descubre cuáles creativos realmente convierten con rankings automáticos.</p>
+                </div>
+                <div class="gallery-card reveal reveal-delay-2">
+                    <div class="gallery-img-wrap">
+                        <img src="/img/feat-funnel.png" alt="Embudo de Tráfico" loading="lazy" />
+                        <div class="img-blur-overlay"></div>
+                    </div>
+                    <h4>Embudo de <span class="gold">Tráfico</span></h4>
+                    <p>Visualiza cada etapa: desde la impresión hasta la conversión final.</p>
+                </div>
+                <div class="gallery-card reveal">
+                    <div class="gallery-img-wrap">
+                        <img src="/img/feat-charts.png" alt="Análisis de Tendencias" loading="lazy" />
+                        <div class="img-blur-overlay"></div>
+                    </div>
+                    <h4>Análisis de <span class="gold">Tendencias</span></h4>
+                    <p>Gráficas de evolución diaria de gasto, leads y costo por resultado.</p>
+                </div>
+                <div class="gallery-card reveal reveal-delay-1">
+                    <div class="gallery-img-wrap">
+                        <img src="/img/feat-donut.png" alt="Distribución de Resultados" loading="lazy" />
+                        <div class="img-blur-overlay"></div>
+                    </div>
+                    <h4>Distribución de <span class="gold">Resultados</span></h4>
+                    <p>Entiende cómo se reparten tus leads por conjunto de anuncios y campañas.</p>
+                </div>
+                <div class="gallery-card reveal reveal-delay-2">
+                    <div class="gallery-img-wrap">
+                        <img src="/img/feat-monitor.png" alt="Monitoreo Inteligente" loading="lazy" />
+                        <div class="img-blur-overlay"></div>
+                    </div>
+                    <h4>Monitoreo <span class="gold">Inteligente</span></h4>
+                    <p>Alertas, proyecciones y recomendaciones automáticas para proteger tu presupuesto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ COMPARISON ═══════════════ -->
+    <section class="section section-alt" id="comparison">
+        <div class="container">
+            <span class="section-tag reveal">Comparativa</span>
+            <h2 class="section-title reveal">Krew Analytics vs. Lo que ya probaste</h2>
+
+            <div class="table-wrapper reveal">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Looker Studio</th>
+                            <th>Triple Whale</th>
+                            <th>Hyros</th>
+                            <th class="highlight-col">Krew Analytics</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Precio</td>
+                            <td>Gratis (tu tiempo no)</td>
+                            <td>$300-$800/mes</td>
+                            <td>$500-$1,500/mes</td>
+                            <td class="highlight-col"><strong>$19 USD/mes</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Setup</td>
+                            <td>Días/semanas</td>
+                            <td>Horas + integración</td>
+                            <td>Horas + píxel</td>
+                            <td class="highlight-col"><strong>30 segundos</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Fuente de datos</td>
+                            <td>Conectores complicados</td>
+                            <td>API directa</td>
+                            <td>Pixel propio</td>
+                            <td class="highlight-col"><strong>Google Sheets</strong></td>
+                        </tr>
+                        <tr>
+                            <td>UI / UX</td>
+                            <td>Básico, lento</td>
+                            <td>Hermoso</td>
+                            <td>Funcional</td>
+                            <td class="highlight-col"><strong>Premium, animado</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Alertas inteligentes</td>
+                            <td><span class="x-mark">✗</span></td>
+                            <td><span class="check-mark">✓</span></td>
+                            <td><span class="check-mark">✓</span></td>
+                            <td class="highlight-col"><span class="check-mark gold-check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Compartir con clientes</td>
+                            <td>Link feo</td>
+                            <td><span class="x-mark">✗</span></td>
+                            <td><span class="x-mark">✗</span></td>
+                            <td class="highlight-col"><span class="check-mark gold-check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Métricas personalizables</td>
+                            <td>Limitado</td>
+                            <td><span class="check-mark">✓</span></td>
+                            <td><span class="check-mark">✓</span></td>
+                            <td class="highlight-col"><span class="check-mark gold-check">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Requiere código</td>
+                            <td>Fórmulas complejas</td>
+                            <td>No</td>
+                            <td>No</td>
+                            <td class="highlight-col"><strong>No</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ AUDIENCE ═══════════════ -->
+    <section class="section" id="audience">
+        <div class="container">
+            <span class="section-tag reveal">¿Para quién es?</span>
+            <h2 class="section-title reveal">Si te identificas con alguno de estos, Krew es para ti.</h2>
+
+            <div class="audience-grid">
+                <div class="audience-card reveal">
+                    <span class="audience-emoji">🎯</span>
+                    <h3>Media Buyers Freelance</h3>
+                    <p>Manejas 3-10 clientes y necesitas reportes rápidos sin perder medio día.</p>
+                </div>
+                <div class="audience-card reveal reveal-delay-1">
+                    <span class="audience-emoji">🏢</span>
+                    <h3>Agencias Pequeñas/Medianas</h3>
+                    <p>Quieres verte premium sin pagar herramientas enterprise de $1,000/mes.</p>
+                </div>
+                <div class="audience-card reveal reveal-delay-2">
+                    <span class="audience-emoji">🛒</span>
+                    <h3>Dueños de Ecommerce</h3>
+                    <p>Corres tus propios ads y quieres ver todo en un solo lugar, no en 5 pestañas.</p>
+                </div>
+                <div class="audience-card reveal reveal-delay-3">
+                    <span class="audience-emoji">📊</span>
+                    <h3>Usuarios de Google Sheets</h3>
+                    <p>Ya usas Sheets para trackear tus campañas. Solo te falta el dashboard visual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+    <section class="section section-alt" id="how">
+        <div class="container">
+            <span class="section-tag reveal">Cómo funciona</span>
+            <h2 class="section-title reveal">3 pasos. 30 segundos. Cero complicaciones.</h2>
+
+            <div class="steps">
+                <div class="step reveal">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Exporta tus datos de Meta Ads</h3>
+                        <p>Usa tu Google Sheet actual o exporta tus métricas directamente. Si ya tienes un Sheet, estás
+                            listo.</p>
+                    </div>
+                </div>
+                <div class="step-line"></div>
+                <div class="step reveal reveal-delay-1">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Pega el link del Sheet en Krew</h3>
+                        <p>Conecta tu Sheet en un click. Sin APIs, sin configuraciones, sin código. Literalmente pegar
+                            un URL.</p>
+                    </div>
+                </div>
+                <div class="step-line"></div>
+                <div class="step reveal reveal-delay-2">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Tu dashboard se genera automáticamente</h3>
+                        <p>KPIs, gráficas, alertas, rankings — todo listo. En tiempo real. Comparte el link con tu
+                            cliente y quédate como un crack.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bonus-card reveal">
+                <span class="bonus-icon">🎁</span>
+                <div>
+                    <strong>Bonus:</strong> Comparte el link con tu cliente, y verá un dashboard profesional con el
+                    nombre de su reporte. Sin crear cuenta.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <span class="section-tag reveal">Testimonios</span>
+            <h2 class="section-title reveal">Lo que dicen nuestros usuarios</h2>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <p class="testimonial-text">"Antes hacía reportes en Looker Studio que me tomaban 3 horas. Ahora
+                        conecto el Sheet y mi cliente tiene su dashboard en vivo. <strong>Game changer.</strong>"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div>
+                            <strong>Media Buyer</strong>
+                            <span>Agencia de Performance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-1">
+                    <p class="testimonial-text">"Mis clientes me preguntan con qué herramienta hago los reportes. Cuando
+                        les digo el precio <strong>no lo creen.</strong>"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <strong>Agencia de Marketing</strong>
+                            <span>CDMX, México</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-2">
+                    <p class="testimonial-text">"Las alertas inteligentes me salvaron de quemar $800 en un ad que estaba
+                        a 15X del objetivo. <strong>Se pagó solo.</strong>"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">E</div>
+                        <div>
+                            <strong>Ecommerce Owner</strong>
+                            <span>Tienda Online</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FAQ ═══════════════ -->
+    <section class="section section-alt" id="faq">
+        <div class="container container-sm">
+            <span class="section-tag reveal">FAQ</span>
+            <h2 class="section-title reveal">Preguntas frecuentes</h2>
+
+            <div class="faq-list">
+                <div class="faq-item reveal" data-faq>
+                    <button class="faq-question" data-faq-toggle>
+                        ¿Necesito saber programar?
+                        <span class="faq-chevron">▾</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. Si sabes pegar un link, sabes usar Krew Analytics. En serio, es así de simple.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal" data-faq>
+                    <button class="faq-question" data-faq-toggle>
+                        ¿Funciona solo con Meta Ads?
+                        <span class="faq-chevron">▾</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Por ahora sí. Estamos trabajando en soporte para Google Ads y TikTok Ads.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal" data-faq>
+                    <button class="faq-question" data-faq-toggle>
+                        ¿Mis datos están seguros?
+                        <span class="faq-chevron">▾</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí. Tus datos están protegidos con encriptación y cada usuario solo puede ver sus propios
+                            datos. Nadie más tiene acceso.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal" data-faq>
+                    <button class="faq-question" data-faq-toggle>
+                        ¿Puedo personalizar las métricas?
+                        <span class="faq-chevron">▾</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí. Si tu Sheet trackea "Compras" en vez de "Leads", cambia el nombre y todo el dashboard se
+                            actualiza: KPIs, alertas, tablas, todo.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal" data-faq>
+                    <button class="faq-question" data-faq-toggle>
+                        ¿El link compartido muestra datos sensibles?
+                        <span class="faq-chevron">▾</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. El link es read-only. Tu cliente ve el dashboard pero no puede ver tu cuenta, otros
+                            clientes, ni modificar nada.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal" data-faq>
+                    <button class="faq-question" data-faq-toggle>
+                        ¿Cómo se compara con Looker Studio?
+                        <span class="faq-chevron">▾</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Looker Studio es gratis pero tu tiempo no. Krew está diseñado para tener un dashboard
+                            funcional en 30 segundos, no en 3 días. Además, tiene alertas inteligentes, recomendaciones
+                            y una UI que tus clientes van a querer mostrar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ DEMO VIDEO ═══════════════ -->
+    <section class="section section-alt" id="demo">
+        <div class="container" style="text-align:center;">
+            <span class="section-tag reveal">Facilidad</span>
+            <h2 class="section-title reveal">Mira cómo <span class="gold">funciona</span> en la práctica</h2>
+            <p class="section-sub reveal" style="margin:0 auto 40px;">Un recorrido rápido por el dashboard para que veas
+                lo fácil que es.</p>
+
+            <div class="video-wrap reveal">
+                <div class="video-container">
+                    <iframe src="https://www.loom.com/embed/1680aab9eb7e4129923b2e752166e414" frameborder="0"
+                        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <a href="https://www.skool.com/krew-ai/about" class="btn btn-primary reveal" target="_blank"
+                style="margin-top:32px;">
+                Quiero mi dashboard →
+            </a>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PRICING ═══════════════ -->
+    <section class="section" id="pricing">
+        <div class="container" style="text-align:center;">
+            <span class="section-tag reveal">Precio</span>
+            <h2 class="section-title reveal">Un solo plan. Acceso a todo.</h2>
+            <p class="section-sub reveal" style="margin:0 auto 48px;">Sin planes confusos, sin upgrades ocultos. Pagas
+                $19 USD/mes y obtienes todas las funcionalidades.</p>
+
+            <div class="pricing-card reveal">
+                <div class="pricing-badge">⚡ Acceso Completo</div>
+                <div class="pricing-price">
+                    <span class="pricing-currency">$</span>
+                    <span class="pricing-amount">19</span>
+                    <span class="pricing-period">USD / mes</span>
+                </div>
+
+                <ul class="pricing-features">
+                    <li class="pf-check">✅ Dashboard premium con dark mode</li>
+                    <li class="pf-check">✅ KPIs en tiempo real con sparklines</li>
+                    <li class="pf-check">✅ Ranking de mejores anuncios</li>
+                    <li class="pf-check">✅ Embudo de conversión visual</li>
+                    <li class="pf-check">✅ Monitoreo inteligente con alertas</li>
+                    <li class="pf-check">✅ Proyecciones y recomendaciones automáticas</li>
+                    <li class="pf-check">✅ Links compartidos para clientes (read-only)</li>
+                    <li class="pf-check">✅ Multi-Sheet (un sheet por cliente)</li>
+                    <li class="pf-check">✅ Métricas 100% personalizables</li>
+                    <li class="pf-check">✅ Contadores animados en vivo</li>
+                    <li class="pf-check">✅ Scatter plot inversión vs. resultados</li>
+                    <li class="pf-check">✅ Actualizaciones y mejoras continuas</li>
+                    <li class="pf-check">✅ Soporte de la comunidad Krew</li>
+                </ul>
+
+                <div class="pricing-platform">
+                    <span>🟢 Compatible con <strong>Meta Ads</strong></span>
+                    <span class="pricing-soon">🔜 Próximamente: Google Ads · TikTok Ads · más fuentes</span>
+                </div>
+
+                <a href="https://www.skool.com/krew-ai/about" class="btn btn-primary btn-lg" target="_blank"
+                    style="width:100%;justify-content:center;">
+                    Únete a la comunidad →
+                </a>
+                <p class="pricing-micro">Acceso a la comunidad Skool + Dashboard Krew Analytics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FINAL CTA ═══════════════ -->
+    <section class="section cta-section" id="cta">
+        <div class="container" style="text-align:center;">
+            <div class="cta-glow"></div>
+            <h2 class="cta-title reveal">Tus ads ya están corriendo.<br />Tu dashboard debería estar listo.</h2>
+            <p class="cta-sub reveal">
+                Únete a la comunidad Krew y transforma tu Google Sheet en un centro de control
+                que impresiona clientes y protege tu presupuesto.
+            </p>
+            <a href="https://www.skool.com/krew-ai/about" class="btn btn-primary btn-lg reveal" target="_blank">
+                Únete a Krew por $19/mes →
+            </a>
+            <p class="cta-micro reveal">Setup en 30 segundos · Acceso a todas las funcionalidades · Comunidad incluida
+            </p>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="nav-logo-icon">⚡</span>
+                    <span class="nav-logo-text">Krew<span class="gold">Analytics</span></span>
+                    <p class="footer-tagline">Dashboard visuales en tiempo real para la comunidad Krew.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.skool.com/krew-ai/about" target="_blank">Comunidad Krew</a>
+                    <a href="#features">Características</a>
+                    <a href="#comparison">Comparativa</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Krew Analytics. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
