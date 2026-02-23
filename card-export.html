@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #070b18;
+            color: #fff;
+        }
+
+        .card {
+            width: 1400px;
+            height: 790px;
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .card-img-wrap {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 40px 10px;
+        }
+
+        .card-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .img-blur-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30%;
+            background: linear-gradient(to top, #070b18 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .card-text {
+            padding: 28px 44px 36px;
+        }
+
+        .card-text h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .card-text h3 .gold {
+            color: #E8B94A;
+        }
+
+        .card-text p {
+            color: #9ca3af;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Gold accent line */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 40px;
+            right: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #E8B94A, transparent);
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Card 1: KPIs -->
+    <div class="card" id="card-1">
+        <div class="card-img-wrap">
+            <img src="/img/feat-kpis.png" alt="KPIs">
+            <div class="img-blur-overlay"></div>
+        </div>
+        <div class="card-text">
+            <h3>KPIs en <span class="gold">Tiempo Real</span></h3>
+            <p>Gasto, resultados, CPR y CTR actualizados automáticamente con sparklines animadas.</p>
+        </div>
+    </div>
+
+    <!-- Card 2: Anuncios -->
+    <div class="card" id="card-2">
+        <div class="card-img-wrap">
+            <img src="/img/feat-ads.png" alt="Anuncios">
+            <div class="img-blur-overlay"></div>
+        </div>
+        <div class="card-text">
+            <h3>Análisis de <span class="gold">Anuncios</span></h3>
+            <p>Descubre cuáles creativos realmente convierten con rankings automáticos.</p>
+        </div>
+    </div>
+
+    <!-- Card 3: Embudo -->
+    <div class="card" id="card-3">
+        <div class="card-img-wrap">
+            <img src="/img/feat-funnel.png" alt="Embudo">
+            <div class="img-blur-overlay"></div>
+        </div>
+        <div class="card-text">
+            <h3>Embudo de <span class="gold">Tráfico</span></h3>
+            <p>Visualiza cada etapa: desde la impresión hasta la conversión final.</p>
+        </div>
+    </div>
+
+    <!-- Card 4: Tendencias -->
+    <div class="card" id="card-4">
+        <div class="card-img-wrap">
+            <img src="/img/feat-charts.png" alt="Tendencias">
+            <div class="img-blur-overlay"></div>
+        </div>
+        <div class="card-text">
+            <h3>Análisis de <span class="gold">Tendencias</span></h3>
+            <p>Gráficas de evolución diaria de gasto, leads y costo por resultado.</p>
+        </div>
+    </div>
+
+    <!-- Card 5: Distribución -->
+    <div class="card" id="card-5">
+        <div class="card-img-wrap">
+            <img src="/img/feat-donut.png" alt="Distribución">
+            <div class="img-blur-overlay"></div>
+        </div>
+        <div class="card-text">
+            <h3>Distribución de <span class="gold">Resultados</span></h3>
+            <p>Entiende cómo se reparten tus leads por conjunto de anuncios y campañas.</p>
+        </div>
+    </div>
+
+    <!-- Card 6: Monitoreo -->
+    <div class="card" id="card-6">
+        <div class="card-img-wrap">
+            <img src="/img/feat-monitor.png" alt="Monitoreo">
+            <div class="img-blur-overlay"></div>
+        </div>
+        <div class="card-text">
+            <h3>Monitoreo <span class="gold">Inteligente</span></h3>
+            <p>Alertas, proyecciones y recomendaciones automáticas para proteger tu presupuesto.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
