@@ -78,3 +78,31 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
         }
     });
 });
+
+// ─── Loom Video Facade (lazy-load) ─────────
+const loomFacade = document.getElementById('loomFacade');
+const videoContainer = document.getElementById('videoContainer');
+
+if (loomFacade && videoContainer) {
+    const loadVideo = () => {
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.loom.com/embed/7787b69245804ead9c735204ae4de544?autoplay=1';
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allowfullscreen', '');
+        iframe.setAttribute('webkitallowfullscreen', '');
+        iframe.setAttribute('mozallowfullscreen', '');
+        iframe.setAttribute('allow', 'autoplay');
+        iframe.style.position = 'absolute';
+        iframe.style.top = '0';
+        iframe.style.left = '0';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.border = 'none';
+        loomFacade.remove();
+        videoContainer.appendChild(iframe);
+    };
+    loomFacade.addEventListener('click', loadVideo);
+    loomFacade.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') loadVideo();
+    });
+}

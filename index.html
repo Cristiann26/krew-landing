@@ -10,8 +10,10 @@
     <meta name="theme-color" content="#0B0F19" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="/style.css" />
 
     <!-- Open Graph -->
@@ -20,21 +22,25 @@
         content="Transforma tu Google Sheet de Meta Ads en un dashboard premium. Setup en 30 segundos." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://krew.com.mx" />
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code (deferred for performance) -->
     <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2606591882975296');
-        fbq('track', 'PageView');
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                !function (f, b, e, v, n, t, s) {
+                    if (f.fbq) return; n = f.fbq = function () {
+                        n.callMethod ?
+                            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                    n.queue = []; t = b.createElement(e); t.async = !0;
+                    t.src = v; s = b.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s)
+                }(window, document, 'script',
+                    'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '2606591882975296');
+                fbq('track', 'PageView');
+            }, 1500);
+        });
     </script>
     <!-- End Meta Pixel Code -->
 </head>
@@ -86,7 +92,8 @@
         </div>
         <div class="hero-image reveal reveal-delay-1">
             <div class="hero-glow"></div>
-            <img src="/img/dashboard-hero.png" alt="Krew Analytics Dashboard" loading="eager" />
+            <img src="/img/dashboard-hero.webp" alt="Krew Analytics Dashboard" loading="eager" fetchpriority="high"
+                width="1674" height="963" />
         </div>
     </section>
 
@@ -268,7 +275,8 @@
             <div class="visual-gallery">
                 <div class="gallery-card reveal">
                     <div class="gallery-img-wrap">
-                        <img src="/img/feat-kpis.png" alt="KPIs en Tiempo Real" loading="lazy" />
+                        <img src="/img/feat-kpis.webp" alt="KPIs en Tiempo Real" loading="lazy" width="1674"
+                            height="963" />
                         <div class="img-blur-overlay"></div>
                     </div>
                     <h4>KPIs en <span class="gold">Tiempo Real</span></h4>
@@ -276,7 +284,8 @@
                 </div>
                 <div class="gallery-card reveal reveal-delay-1">
                     <div class="gallery-img-wrap">
-                        <img src="/img/feat-ads.png" alt="Análisis de Anuncios" loading="lazy" />
+                        <img src="/img/feat-ads.webp" alt="Análisis de Anuncios" loading="lazy" width="1674"
+                            height="963" />
                         <div class="img-blur-overlay"></div>
                     </div>
                     <h4>Análisis de <span class="gold">Anuncios</span></h4>
@@ -284,7 +293,8 @@
                 </div>
                 <div class="gallery-card reveal reveal-delay-2">
                     <div class="gallery-img-wrap">
-                        <img src="/img/feat-funnel.png" alt="Embudo de Tráfico" loading="lazy" />
+                        <img src="/img/feat-funnel.webp" alt="Embudo de Tráfico" loading="lazy" width="1674"
+                            height="963" />
                         <div class="img-blur-overlay"></div>
                     </div>
                     <h4>Embudo de <span class="gold">Tráfico</span></h4>
@@ -292,7 +302,8 @@
                 </div>
                 <div class="gallery-card reveal">
                     <div class="gallery-img-wrap">
-                        <img src="/img/feat-charts.png" alt="Análisis de Tendencias" loading="lazy" />
+                        <img src="/img/feat-charts.webp" alt="Análisis de Tendencias" loading="lazy" width="1674"
+                            height="963" />
                         <div class="img-blur-overlay"></div>
                     </div>
                     <h4>Análisis de <span class="gold">Tendencias</span></h4>
@@ -300,7 +311,8 @@
                 </div>
                 <div class="gallery-card reveal reveal-delay-1">
                     <div class="gallery-img-wrap">
-                        <img src="/img/feat-donut.png" alt="Distribución de Resultados" loading="lazy" />
+                        <img src="/img/feat-donut.webp" alt="Distribución de Resultados" loading="lazy" width="1674"
+                            height="963" />
                         <div class="img-blur-overlay"></div>
                     </div>
                     <h4>Distribución de <span class="gold">Resultados</span></h4>
@@ -308,7 +320,8 @@
                 </div>
                 <div class="gallery-card reveal reveal-delay-2">
                     <div class="gallery-img-wrap">
-                        <img src="/img/feat-monitor.png" alt="Monitoreo Inteligente" loading="lazy" />
+                        <img src="/img/feat-monitor.webp" alt="Monitoreo Inteligente" loading="lazy" width="1674"
+                            height="963" />
                         <div class="img-blur-overlay"></div>
                     </div>
                     <h4>Monitoreo <span class="gold">Inteligente</span></h4>
@@ -597,9 +610,18 @@
                 lo fácil que es.</p>
 
             <div class="video-wrap reveal">
-                <div class="video-container">
-                    <iframe src="https://www.loom.com/embed/7787b69245804ead9c735204ae4de544" frameborder="0"
-                        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <div class="video-container" id="videoContainer">
+                    <div class="loom-facade" id="loomFacade" role="button" tabindex="0"
+                        aria-label="Reproducir video demo">
+                        <img src="/img/loom-thumb.webp" alt="Preview del video demo" loading="lazy" width="800"
+                            height="450" />
+                        <div class="play-button">
+                            <svg width="68" height="68" viewBox="0 0 68 68" fill="none">
+                                <circle cx="34" cy="34" r="34" fill="rgba(0,0,0,0.6)" />
+                                <polygon points="27,20 52,34 27,48" fill="white" />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
 
